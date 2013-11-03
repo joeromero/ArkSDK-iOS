@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ArkSDK.h"
 
 @interface ArkSDKTests : XCTestCase
 
@@ -28,7 +29,11 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    ArkAPIRequest *request = [ArkAPIRequest requestWithToken:@"8d076931-c608-4849-9f16-76e5de931c0e"];
+    [request startProfileRequestWithEmail:@"5ntrol@gmail.com" andCompletionBlock:^(ArkProfile *profile, NSHTTPURLResponse *response, NSError *error) {
+        XCTAssertNotNil(profile, @"profile was nil!");
+        NSLog(@"%@", profile);
+    }];
 }
 
 @end

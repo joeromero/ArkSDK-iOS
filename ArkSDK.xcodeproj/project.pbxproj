@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		A136F2201826EE36006755D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F21F1826EE36006755D3 /* Foundation.framework */; };
 		A136F2251826EE36006755D3 /* ArkSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A136F2241826EE36006755D3 /* ArkSDK.h */; };
-		A136F2271826EE37006755D3 /* ArkSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A136F2261826EE37006755D3 /* ArkSDK.m */; };
 		A136F22E1826EE37006755D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F22D1826EE37006755D3 /* XCTest.framework */; };
 		A136F22F1826EE37006755D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F21F1826EE36006755D3 /* Foundation.framework */; };
 		A136F2311826EE37006755D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F2301826EE37006755D3 /* UIKit.framework */; };
 		A136F2341826EE37006755D3 /* libArkSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F21C1826EE36006755D3 /* libArkSDK.a */; };
 		A136F23A1826EE37006755D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A136F2381826EE37006755D3 /* InfoPlist.strings */; };
 		A136F23C1826EE37006755D3 /* ArkSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A136F23B1826EE37006755D3 /* ArkSDKTests.m */; };
+		A136F2461826EEBF006755D3 /* ArkSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A136F2241826EE36006755D3 /* ArkSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C4E1826F26B00E4BC2D /* ArkAPIRequest.h */; };
+		A1A72C511826F26B00E4BC2D /* ArkAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */; };
+		A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C561826F75900E4BC2D /* ArkProfile.h */; };
+		A1A72C591826F75900E4BC2D /* ArkProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C571826F75900E4BC2D /* ArkProfile.m */; };
+		A1A72C5D182706E900E4BC2D /* NSDictionary+ARKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */; };
+		A1A72C5E182706E900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */; };
+		A1A72C5F18270A1300E4BC2D /* ArkAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */; };
+		A1A72C6018270A1600E4BC2D /* ArkProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C571826F75900E4BC2D /* ArkProfile.m */; };
+		A1A72C6118270A1900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +55,18 @@
 		A136F21F1826EE36006755D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A136F2231826EE36006755D3 /* ArkSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArkSDK-Prefix.pch"; sourceTree = "<group>"; };
 		A136F2241826EE36006755D3 /* ArkSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArkSDK.h; sourceTree = "<group>"; };
-		A136F2261826EE37006755D3 /* ArkSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArkSDK.m; sourceTree = "<group>"; };
 		A136F22C1826EE37006755D3 /* ArkSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArkSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A136F22D1826EE37006755D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A136F2301826EE37006755D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A136F2371826EE37006755D3 /* ArkSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArkSDKTests-Info.plist"; sourceTree = "<group>"; };
 		A136F2391826EE37006755D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A136F23B1826EE37006755D3 /* ArkSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArkSDKTests.m; sourceTree = "<group>"; };
+		A1A72C4E1826F26B00E4BC2D /* ArkAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkAPIRequest.h; sourceTree = "<group>"; };
+		A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkAPIRequest.m; sourceTree = "<group>"; };
+		A1A72C561826F75900E4BC2D /* ArkProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkProfile.h; sourceTree = "<group>"; };
+		A1A72C571826F75900E4BC2D /* ArkProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkProfile.m; sourceTree = "<group>"; };
+		A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ARKAdditions.h"; sourceTree = "<group>"; };
+		A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ARKAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				A136F2241826EE36006755D3 /* ArkSDK.h */,
-				A136F2261826EE37006755D3 /* ArkSDK.m */,
+				A1A72C4E1826F26B00E4BC2D /* ArkAPIRequest.h */,
+				A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */,
+				A1A72C561826F75900E4BC2D /* ArkProfile.h */,
+				A1A72C571826F75900E4BC2D /* ArkProfile.m */,
+				A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */,
+				A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */,
 				A136F2221826EE36006755D3 /* Supporting Files */,
 			);
 			path = ArkSDK;
@@ -145,6 +164,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A136F2451826EEB6006755D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A72C5D182706E900E4BC2D /* NSDictionary+ARKAdditions.h in Headers */,
+				A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */,
+				A136F2461826EEBF006755D3 /* ArkSDK.h in Headers */,
+				A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		A136F21B1826EE36006755D3 /* ArkSDK */ = {
 			isa = PBXNativeTarget;
@@ -153,6 +186,7 @@
 				A136F2181826EE36006755D3 /* Sources */,
 				A136F2191826EE36006755D3 /* Frameworks */,
 				A136F21A1826EE36006755D3 /* CopyFiles */,
+				A136F2451826EEB6006755D3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -224,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A136F2271826EE37006755D3 /* ArkSDK.m in Sources */,
+				A1A72C591826F75900E4BC2D /* ArkProfile.m in Sources */,
+				A1A72C5E182706E900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */,
+				A1A72C511826F26B00E4BC2D /* ArkAPIRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A72C6018270A1600E4BC2D /* ArkProfile.m in Sources */,
+				A1A72C6118270A1900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */,
 				A136F23C1826EE37006755D3 /* ArkSDKTests.m in Sources */,
+				A1A72C5F18270A1300E4BC2D /* ArkAPIRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +375,7 @@
 				GCC_PREFIX_HEADER = "ArkSDK/ArkSDK-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -348,6 +388,7 @@
 				GCC_PREFIX_HEADER = "ArkSDK/ArkSDK-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -409,6 +450,7 @@
 				A136F2411826EE37006755D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A136F2421826EE37006755D3 /* Build configuration list for PBXNativeTarget "ArkSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +459,7 @@
 				A136F2441826EE37006755D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
