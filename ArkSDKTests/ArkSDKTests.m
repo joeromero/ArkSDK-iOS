@@ -29,11 +29,16 @@
 
 - (void)testExample
 {
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     ArkAPIRequest *request = [ArkAPIRequest requestWithToken:@"8d076931-c608-4849-9f16-76e5de931c0e"];
+    __block ArkProfile *prof = nil;
     [request startProfileRequestWithEmail:@"5ntrol@gmail.com" andCompletionBlock:^(ArkProfile *profile, NSHTTPURLResponse *response, NSError *error) {
-        XCTAssertNotNil(profile, @"profile was nil!");
-        NSLog(@"%@", profile);
+        prof = profile;
+        dispatch_semaphore_signal(semaphore);
     }];
+    dispatch_semaphore_wait(semaphore, 10.0);
+    XCTAssertNotNil(prof, @"profile was nil!");
+    NSLog(@"%@", prof);
 }
 
 @end

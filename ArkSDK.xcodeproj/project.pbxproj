@@ -11,20 +11,25 @@
 		A136F2251826EE36006755D3 /* ArkSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A136F2241826EE36006755D3 /* ArkSDK.h */; };
 		A136F22E1826EE37006755D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F22D1826EE37006755D3 /* XCTest.framework */; };
 		A136F22F1826EE37006755D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F21F1826EE36006755D3 /* Foundation.framework */; };
-		A136F2311826EE37006755D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F2301826EE37006755D3 /* UIKit.framework */; };
 		A136F2341826EE37006755D3 /* libArkSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A136F21C1826EE36006755D3 /* libArkSDK.a */; };
 		A136F23A1826EE37006755D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A136F2381826EE37006755D3 /* InfoPlist.strings */; };
 		A136F23C1826EE37006755D3 /* ArkSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A136F23B1826EE37006755D3 /* ArkSDKTests.m */; };
 		A136F2461826EEBF006755D3 /* ArkSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A136F2241826EE36006755D3 /* ArkSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C4E1826F26B00E4BC2D /* ArkAPIRequest.h */; };
 		A1A72C511826F26B00E4BC2D /* ArkAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */; };
-		A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C561826F75900E4BC2D /* ArkProfile.h */; };
+		A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C561826F75900E4BC2D /* ArkProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A72C591826F75900E4BC2D /* ArkProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C571826F75900E4BC2D /* ArkProfile.m */; };
 		A1A72C5D182706E900E4BC2D /* NSDictionary+ARKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */; };
 		A1A72C5E182706E900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */; };
 		A1A72C5F18270A1300E4BC2D /* ArkAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */; };
 		A1A72C6018270A1600E4BC2D /* ArkProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C571826F75900E4BC2D /* ArkProfile.m */; };
 		A1A72C6118270A1900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */; };
+		A1A72C6418296CE500E4BC2D /* ArkLink.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C6218296CE500E4BC2D /* ArkLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A72C6518296CE500E4BC2D /* ArkLink.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C6318296CE500E4BC2D /* ArkLink.m */; };
+		A1A72C6818296FE000E4BC2D /* ArkEducation.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C6618296FE000E4BC2D /* ArkEducation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A72C6918296FE000E4BC2D /* ArkEducation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C6718296FE000E4BC2D /* ArkEducation.m */; };
+		A1A72C6C1829726500E4BC2D /* ArkWork.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C6A1829726500E4BC2D /* ArkWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1A72C6D1829726500E4BC2D /* ArkWork.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C6B1829726500E4BC2D /* ArkWork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +62,6 @@
 		A136F2241826EE36006755D3 /* ArkSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArkSDK.h; sourceTree = "<group>"; };
 		A136F22C1826EE37006755D3 /* ArkSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArkSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A136F22D1826EE37006755D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A136F2301826EE37006755D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A136F2371826EE37006755D3 /* ArkSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArkSDKTests-Info.plist"; sourceTree = "<group>"; };
 		A136F2391826EE37006755D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A136F23B1826EE37006755D3 /* ArkSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArkSDKTests.m; sourceTree = "<group>"; };
@@ -67,6 +71,12 @@
 		A1A72C571826F75900E4BC2D /* ArkProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkProfile.m; sourceTree = "<group>"; };
 		A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ARKAdditions.h"; sourceTree = "<group>"; };
 		A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ARKAdditions.m"; sourceTree = "<group>"; };
+		A1A72C6218296CE500E4BC2D /* ArkLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkLink.h; sourceTree = "<group>"; };
+		A1A72C6318296CE500E4BC2D /* ArkLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkLink.m; sourceTree = "<group>"; };
+		A1A72C6618296FE000E4BC2D /* ArkEducation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkEducation.h; sourceTree = "<group>"; };
+		A1A72C6718296FE000E4BC2D /* ArkEducation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkEducation.m; sourceTree = "<group>"; };
+		A1A72C6A1829726500E4BC2D /* ArkWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkWork.h; sourceTree = "<group>"; };
+		A1A72C6B1829726500E4BC2D /* ArkWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkWork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +94,6 @@
 			files = (
 				A136F22E1826EE37006755D3 /* XCTest.framework in Frameworks */,
 				A136F2341826EE37006755D3 /* libArkSDK.a in Frameworks */,
-				A136F2311826EE37006755D3 /* UIKit.framework in Frameworks */,
 				A136F22F1826EE37006755D3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +125,6 @@
 			children = (
 				A136F21F1826EE36006755D3 /* Foundation.framework */,
 				A136F22D1826EE37006755D3 /* XCTest.framework */,
-				A136F2301826EE37006755D3 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +137,12 @@
 				A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */,
 				A1A72C561826F75900E4BC2D /* ArkProfile.h */,
 				A1A72C571826F75900E4BC2D /* ArkProfile.m */,
+				A1A72C6218296CE500E4BC2D /* ArkLink.h */,
+				A1A72C6318296CE500E4BC2D /* ArkLink.m */,
+				A1A72C6618296FE000E4BC2D /* ArkEducation.h */,
+				A1A72C6718296FE000E4BC2D /* ArkEducation.m */,
+				A1A72C6A1829726500E4BC2D /* ArkWork.h */,
+				A1A72C6B1829726500E4BC2D /* ArkWork.m */,
 				A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */,
 				A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */,
 				A136F2221826EE36006755D3 /* Supporting Files */,
@@ -169,10 +183,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */,
 				A1A72C5D182706E900E4BC2D /* NSDictionary+ARKAdditions.h in Headers */,
+				A1A72C6818296FE000E4BC2D /* ArkEducation.h in Headers */,
+				A1A72C6418296CE500E4BC2D /* ArkLink.h in Headers */,
+				A1A72C6C1829726500E4BC2D /* ArkWork.h in Headers */,
 				A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */,
 				A136F2461826EEBF006755D3 /* ArkSDK.h in Headers */,
-				A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A72C6918296FE000E4BC2D /* ArkEducation.m in Sources */,
+				A1A72C6518296CE500E4BC2D /* ArkLink.m in Sources */,
 				A1A72C591826F75900E4BC2D /* ArkProfile.m in Sources */,
 				A1A72C5E182706E900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */,
 				A1A72C511826F26B00E4BC2D /* ArkAPIRequest.m in Sources */,
+				A1A72C6D1829726500E4BC2D /* ArkWork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

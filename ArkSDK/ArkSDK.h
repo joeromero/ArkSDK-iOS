@@ -1,2 +1,5 @@
 #import "ArkAPIRequest.h"
 #import "ArkProfile.h"
+#import "ArkLink.h"
+#import "ArkEducation.h"
+#import "ArkWork.h"
