@@ -7,11 +7,12 @@
 //
 
 #import "ArkLink.h"
-#import "NSDictionary+ARKAdditions.h"
 
 @interface ArkLink ()
 
 @property (nonatomic, strong) NSDictionary *dict;
+
+- (id)ark_valueForKeyPath:(NSString *)keyPath;
 
 @end
 
@@ -27,27 +28,38 @@
 
 - (NSString *)email
 {
-    return [self.dict ark_valueForKeyPath:@"email"];
+    return [self ark_valueForKeyPath:@"email"];
 }
 
 - (NSString *)networkName
 {
-    return [self.dict ark_valueForKeyPath:@"network_name"];
+    return [self ark_valueForKeyPath:@"network_name"];
 }
 
 - (NSString *)networkId
 {
-    return [self.dict ark_valueForKeyPath:@"network_id"];
+    return [self ark_valueForKeyPath:@"network_id"];
 }
 
 - (NSString *)profileUrl
 {
-    return [self.dict ark_valueForKeyPath:@"profile_url"];
+    return [self ark_valueForKeyPath:@"profile_url"];
 }
 
 - (NSString *)profileId
 {
-    return [self.dict ark_valueForKeyPath:@"profile_id"];
+    return [self ark_valueForKeyPath:@"profile_id"];
+}
+
+- (id)ark_valueForKeyPath:(NSString *)keyPath
+{
+    id value = [self.dict valueForKeyPath:keyPath];
+    
+    if (value == [NSNull null]) {
+        return nil;
+    }
+    
+    return value;
 }
 
 @end

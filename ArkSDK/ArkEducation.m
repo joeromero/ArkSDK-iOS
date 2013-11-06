@@ -7,11 +7,12 @@
 //
 
 #import "ArkEducation.h"
-#import "NSDictionary+ARKAdditions.h"
 
 @interface ArkEducation ()
 
 @property (nonatomic, strong) NSDictionary *dict;
+
+- (id)ark_valueForKeyPath:(NSString *)keyPath;
 
 @end
 
@@ -27,27 +28,38 @@
 
 - (NSString *)school
 {
-    return [self.dict ark_valueForKeyPath:@"school"];
+    return [self ark_valueForKeyPath:@"school"];
 }
 
 - (NSString *)major
 {
-    return [self.dict ark_valueForKeyPath:@"major"];
+    return [self ark_valueForKeyPath:@"major"];
 }
 
 - (NSString *)from
 {
-    return [self.dict ark_valueForKeyPath:@"from"];
+    return [self ark_valueForKeyPath:@"from"];
 }
 
 - (NSString *)to
 {
-    return [self.dict ark_valueForKeyPath:@"to"];
+    return [self ark_valueForKeyPath:@"to"];
 }
 
 - (NSString *)src
 {
-    return [self.dict ark_valueForKeyPath:@"src"];
+    return [self ark_valueForKeyPath:@"src"];
+}
+
+- (id)ark_valueForKeyPath:(NSString *)keyPath
+{
+    id value = [self.dict valueForKeyPath:keyPath];
+    
+    if (value == [NSNull null]) {
+        return nil;
+    }
+    
+    return value;
 }
 
 @end

@@ -28,7 +28,7 @@
 
 - (void)startProfileRequestWithEmail:(NSString *)email andCompletionBlock:(arkProfileSearchCompletionBlock)completion
 {
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *urlString = [NSString stringWithFormat:@"https://testapi.ark.com/email/%@", email];
         NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -69,7 +69,7 @@
                 }
             }
         }
-//    });
+    });
 }
 
 @end

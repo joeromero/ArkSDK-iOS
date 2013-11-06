@@ -7,7 +7,6 @@
 //
 
 #import "ArkProfile.h"
-#import "NSDictionary+ARKAdditions.h"
 #import "ArkLink.h"
 #import "ArkEducation.h"
 #import "ArkWork.h"
@@ -15,6 +14,8 @@
 @interface ArkProfile ()
 
 @property (nonatomic, strong) NSDictionary *dict;
+
+- (id)ark_valueForKeyPath:(NSString *)keyPath;
 
 @end
 
@@ -30,32 +31,32 @@
 
 - (NSString *)name
 {
-    return [self.dict ark_valueForKeyPath:@"name"];
+    return [self ark_valueForKeyPath:@"name"];
 }
 
 - (NSString *)location
 {
-    return [self.dict ark_valueForKeyPath:@"location"];
+    return [self ark_valueForKeyPath:@"location"];
 }
 
 - (NSString *)title
 {
-    return [self.dict ark_valueForKeyPath:@"title"];
+    return [self ark_valueForKeyPath:@"title"];
 }
 
 - (NSArray *)pics
 {
-    return [self.dict ark_valueForKeyPath:@"pics"];
+    return [self ark_valueForKeyPath:@"pics"];
 }
 
 - (NSArray *)emails
 {
-    return [self.dict ark_valueForKeyPath:@"emails"];    
+    return [self ark_valueForKeyPath:@"emails"];
 }
 
 - (NSArray *)links
 {
-    NSArray *links = [self.dict ark_valueForKeyPath:@"links"];
+    NSArray *links = [self ark_valueForKeyPath:@"links"];
     NSMutableArray *linkObjs = [[NSMutableArray alloc] initWithCapacity:links.count];
     for (NSDictionary *dict in links) {
         ArkLink *link = [[ArkLink alloc] initWithDictionary:dict];
@@ -67,12 +68,12 @@
 
 - (NSArray *)languages
 {
-    return [self.dict ark_valueForKeyPath:@"languages"];
+    return [self ark_valueForKeyPath:@"languages"];
 }
 
 - (NSArray *)education
 {
-    NSArray *educations = [self.dict ark_valueForKeyPath:@"education"];
+    NSArray *educations = [self ark_valueForKeyPath:@"education"];
     NSMutableArray *educationObjs = [[NSMutableArray alloc] initWithCapacity:educations.count];
     for (NSDictionary *dict in educations) {
         ArkEducation *edu = [[ArkEducation alloc] initWithDictionary:dict];
@@ -84,7 +85,7 @@
 
 - (NSArray *)work
 {
-    NSArray *works = [self.dict ark_valueForKeyPath:@"education"];
+    NSArray *works = [self ark_valueForKeyPath:@"education"];
     NSMutableArray *workObjs = [[NSMutableArray alloc] initWithCapacity:works.count];
     for (NSDictionary *dict in works) {
         ArkWork *work = [[ArkWork alloc] initWithDictionary:dict];
@@ -119,6 +120,17 @@
             completion(working);
         }
     });
+}
+
+- (id)ark_valueForKeyPath:(NSString *)keyPath
+{
+    id value = [self.dict valueForKeyPath:keyPath];
+    
+    if (value == [NSNull null]) {
+        return nil;
+    }
+    
+    return value;
 }
 
 @end

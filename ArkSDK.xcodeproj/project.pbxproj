@@ -30,15 +30,12 @@
 		A136F23A1826EE37006755D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A136F2381826EE37006755D3 /* InfoPlist.strings */; };
 		A136F23C1826EE37006755D3 /* ArkSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A136F23B1826EE37006755D3 /* ArkSDKTests.m */; };
 		A136F2461826EEBF006755D3 /* ArkSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A136F2241826EE36006755D3 /* ArkSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C4E1826F26B00E4BC2D /* ArkAPIRequest.h */; };
+		A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C4E1826F26B00E4BC2D /* ArkAPIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A72C511826F26B00E4BC2D /* ArkAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */; };
 		A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C561826F75900E4BC2D /* ArkProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A72C591826F75900E4BC2D /* ArkProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C571826F75900E4BC2D /* ArkProfile.m */; };
-		A1A72C5D182706E900E4BC2D /* NSDictionary+ARKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */; };
-		A1A72C5E182706E900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */; };
 		A1A72C5F18270A1300E4BC2D /* ArkAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */; };
 		A1A72C6018270A1600E4BC2D /* ArkProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C571826F75900E4BC2D /* ArkProfile.m */; };
-		A1A72C6118270A1900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */; };
 		A1A72C6418296CE500E4BC2D /* ArkLink.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C6218296CE500E4BC2D /* ArkLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A72C6518296CE500E4BC2D /* ArkLink.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A72C6318296CE500E4BC2D /* ArkLink.m */; };
 		A1A72C6818296FE000E4BC2D /* ArkEducation.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A72C6618296FE000E4BC2D /* ArkEducation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,8 +88,6 @@
 		A1A72C4F1826F26B00E4BC2D /* ArkAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkAPIRequest.m; sourceTree = "<group>"; };
 		A1A72C561826F75900E4BC2D /* ArkProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkProfile.h; sourceTree = "<group>"; };
 		A1A72C571826F75900E4BC2D /* ArkProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkProfile.m; sourceTree = "<group>"; };
-		A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ARKAdditions.h"; sourceTree = "<group>"; };
-		A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ARKAdditions.m"; sourceTree = "<group>"; };
 		A1A72C6218296CE500E4BC2D /* ArkLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkLink.h; sourceTree = "<group>"; };
 		A1A72C6318296CE500E4BC2D /* ArkLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkLink.m; sourceTree = "<group>"; };
 		A1A72C6618296FE000E4BC2D /* ArkEducation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkEducation.h; sourceTree = "<group>"; };
@@ -165,8 +160,6 @@
 				A1A72C6718296FE000E4BC2D /* ArkEducation.m */,
 				A1A72C6A1829726500E4BC2D /* ArkWork.h */,
 				A1A72C6B1829726500E4BC2D /* ArkWork.m */,
-				A1A72C5B182706E900E4BC2D /* NSDictionary+ARKAdditions.h */,
-				A1A72C5C182706E900E4BC2D /* NSDictionary+ARKAdditions.m */,
 				A136F2221826EE36006755D3 /* Supporting Files */,
 			);
 			path = ArkSDK;
@@ -206,11 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1A72C581826F75900E4BC2D /* ArkProfile.h in Headers */,
-				A1A72C5D182706E900E4BC2D /* NSDictionary+ARKAdditions.h in Headers */,
 				A1A72C6818296FE000E4BC2D /* ArkEducation.h in Headers */,
+				A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */,
 				A1A72C6418296CE500E4BC2D /* ArkLink.h in Headers */,
 				A1A72C6C1829726500E4BC2D /* ArkWork.h in Headers */,
-				A1A72C501826F26B00E4BC2D /* ArkAPIRequest.h in Headers */,
 				A136F2461826EEBF006755D3 /* ArkSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +323,6 @@
 				A1A72C6918296FE000E4BC2D /* ArkEducation.m in Sources */,
 				A1A72C6518296CE500E4BC2D /* ArkLink.m in Sources */,
 				A1A72C591826F75900E4BC2D /* ArkProfile.m in Sources */,
-				A1A72C5E182706E900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */,
 				A1A72C511826F26B00E4BC2D /* ArkAPIRequest.m in Sources */,
 				A1A72C6D1829726500E4BC2D /* ArkWork.m in Sources */,
 			);
@@ -342,7 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1A72C6018270A1600E4BC2D /* ArkProfile.m in Sources */,
-				A1A72C6118270A1900E4BC2D /* NSDictionary+ARKAdditions.m in Sources */,
 				A136F23C1826EE37006755D3 /* ArkSDKTests.m in Sources */,
 				A1A72C5F18270A1300E4BC2D /* ArkAPIRequest.m in Sources */,
 			);
@@ -407,9 +397,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
 			};
 			name = Debug;
 		};
@@ -439,15 +430,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
 			};
 			name = Release;
 		};
 		A136F2401826EE37006755D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/ArkSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArkSDK/ArkSDK-Prefix.pch";
@@ -455,12 +449,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
 		A136F2411826EE37006755D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/ArkSDK.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArkSDK/ArkSDK-Prefix.pch";
@@ -468,6 +465,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};
@@ -560,6 +558,7 @@
 				A1A72C721829764400E4BC2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
